@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trade Goods </title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="../login.css">
+</head>
+
+<body id="loginLanding">
+  <!-- navbar menu -->
+  <header>
+    <div id="container">
+      <div id="logo">
+        <a href="#"><img src="../img/Capture.PNG" width="110px"></a>
+      </div>
+      <div id="navlists">
+        <ul>
+          <li><a href="../html/index.html">home</a></li>
+
+      
+          
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- ------------------------------------------------------------------------------------ -->
+
+  <div class="container">
+    <form>
+      <table id="content">
+        <div id="header1">
+          <h2>Login to your Trade Goods account</h2>
+        </div>
+        <tr class="row">
+          <td class="col-25">
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          </td>
+          <td class="col-75">
+            <input type="email" id="email" name="email" required>
+          </td>
+        </tr>
+        <tr class="row">
+          <td class="col-25">
+            <label for="password"><i class="fas fa-lock"></i> Password</label>
+          </td>
+          <td class="col-75" id="pass">
+            <input type="password" id="password2" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              required>
+
+         <i class="fas fa-eye eyeIcon"></i><br>
+         <P id="warning" style="display: none;color: red;">wrong email or password Please Signup first</P>
+  </div>
+  </td>
+  </tr>
+  </table>
+  <br><br>
+  <div>
+    <button id="loginBtn" type="button" onclick="check()">Login <i class="fas fa-angle-right"></i></button>
+  </div>
+  <p><a href="#">Forgot your password?</a> <br> Don’t have an account? <a href="signup.html">Join Now</a>.</p>
+  </form>
+  </div>
+  <script>
+    const visToggle = document.querySelector('.eyeIcon');
+    const input = document.querySelector('#password2');
+    var password = true;
+    visToggle.addEventListener('click', function () {
+      if (password) {
+        input.setAttribute('type', 'text'); // using js dynamically changed the type attribute
+        visToggle.classList.remove('fa-eye');
+        visToggle.classList.add('fa-eye-slash');
+      } else {
+        input.setAttribute('type', 'password');
+        visToggle.classList.remove('fa-eye-slash');
+        visToggle.classList.add('fa-eye');
+      }
+      password = !password;
+    });
+    
+    
+    
+  </script>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>

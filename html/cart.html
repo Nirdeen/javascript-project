@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="..\css\cart.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Your Cart</title>
+</head>
+
+<body>
+    <!-- navbar menu -->
+    <header>
+        <div id="logo">
+            <a href="#"><img src="..\img\Capture.PNG" id="logo"></a> 
+            <p id="title">TRADE GOOD</p>
+        </div>
+        <div id="search">
+            <i class="fas fa-search"> <input type="search"> </i> 
+            <a href="..\signup.html"><button id="btn"><i class="fas fa-user-plus"> Sign Up</i></button></a>
+            <a href="..\profile.html"><button id="btn"><i class="fas fa-user-alt"> profile</i></button></a>
+
+        </div>
+        <div id="navlists">
+            <table>
+                <tr>
+                    <td>
+                        <a href="index.html"><i class="fas fa-home"> home</i></a> 
+                    </td>     
+                    <td>
+                        <a href="fav.html"><i class="fas fa-star"> favourites</i></a>
+                    </td>
+                       <td>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"> cart</i></a> 
+                    </td>
+                    <td>
+                        <a href="login.html"><i class="fas fa-sign-in-alt"> login</i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    
+    <!--************************* left section  ******************************* -->
+
+    <!-- title of the cart  represent 2/3 of page width from left-->
+    <div class="cart-content">
+        <table id="cart-content">
+
+            <tr>
+                <th style="text-align: left;">Shopping Cart</th>
+                <!-- <th style="width:33%"></th> -->
+                <th colspan="5" style="text-align: right;">x Item(s)</th>
+                <!-- <hr > -->
+            </tr>
+
+            <!-- sub table header -->
+            <tr>
+                <td>PRODUCT DETAILS</td>
+                <td>less</td>
+                <td>QUANTITY</td>
+                <td>more</td>
+                <td>PRICE</td>
+                <td>TOTAL</td>
+            </tr>
+            <!-- product 1 -->
+            
+        </table>
+    </div>
+
+    <!--************************* right section  ******************************* -->
+
+    <!-- check out  represent 1/3 of the page width at the right side-->
+    <div class="checkout">
+        <table id="checkout">
+            <tr>
+                <th colspan="2">Order Summary</th>
+            </tr>
+            <tr>
+                <td>ITEM x</td>
+                <td>L.E ***</td>
+            </tr>
+            <tr>
+                <!-- dropdown menu -->
+                <td colspan="2">
+                    <lable>Shipping Method</lable>
+                    <br><br>
+                    <!-- placeholder -->
+                    <div class="dropdown">
+                        <button class="dropbtn">Shipping Method</button>
+                        <div class="dropdown-content">
+                            <a> standered Delivery - 50 L.E </a>
+                            <a>Store - 20 L.E </a>
+                            <a>Instant Delivery - 100 L.E</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <lable>PROMO CODE</lable>
+                    <br><br>
+                    <input type="text" placeholder="Enter your code">
+                    <button id="btn">Apply</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>TOTAL COST</label>
+                    <br><br>
+                    <h3 id="totalCost"></h3>
+                    <br><br>
+
+                    <button id="btn">CHECKOUT</button>
+                    <br><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+<<<<<<< HEAD
+    <footer>
+        <table id="footer">
+            <tr>
+                <td>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-google-play"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <a href="">Info</a>
+                <a href="">Support</a>
+                <a href="">Tearms of use</a>
+                <a href="">Privacy Policy</a>
+    
+            </td>
+            </tr>
+        </table>
+    </footer>
+    
+=======
+    <<script src="../js/cart.js"></script>
+>>>>>>> 87f43f8d70878e033bcce5538cd1e4c668d5118e
+</body>
+
+</html>

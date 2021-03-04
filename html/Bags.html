@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bags</title>
+        <link rel="stylesheet" href="../css/product.css">
+        <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <header>
+            <div id="container">
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                  </div>
+                  <div id="main">
+                    <button class="openbtn" onclick="openNav()">☰ </button>  
+                  </div>
+                <div id="logo">
+                    <a href="../html/index.html"><img src="../img/Capture.PNG" width="110px"></a>
+                </div>
+                <div id="navlists">
+                    <ul>
+                        <li><a class="word" href="../html/index.html">home</a></li>
+                        <li><a class=" word"href="../html/fav.html">favourites</a></li>
+                        <li><a class=" word" href="../html/cart.html">cart</a></li>
+                        <li><a  class=" word"href="../html/login.html">login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+         <!--product-->
+         <div class="img-zoom-container" class="row">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+            <img id="myimage" align="right" src="../img/bag1.jpg" width="500px" height="250px" >
+            <div id="myresult" align="left" class="img-zoom-result" > </div>
+                                                                                     
+            <div class="row">
+                <div class="column">
+                  <img id="laptopimg" src="../img/bag3.jpg" alt="Snow" style="width:80%"alt="Mountains" style="width:100%" >
+                </div>
+                
+                <div class="column">
+                  <img src="../img/bag1.jpg" alt="Mountains" style="width:80%"alt="Mountains" style="width:100%">
+                </div>
+                <div class="column">
+                    <p> brand : <span id="brand">Timberland</span></p>
+                  </div>
+                  <div class="column">
+                    <p>price : <span id="price">150</span></p>
+                  </div>
+                  <div class="column">
+                    <p>category : <span id="category">Office</span></p>
+                  </div>
+                  <div class="column">
+                    <p>subcat : <span id="subcat">Bags</span></p>
+                  </div>
+                             
+            
+                <div class="column">
+                    <button id="buy" type="button"value="">add to cart</button>
+                    <button id="favourit" type="button"value="">favourites</button>
+                  </div>
+                                  
+
+            
+
+          </div>
+          
+
+        
+   <script src="../js/product.js"></script>
+    </body>
+</html>

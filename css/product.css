@@ -1,0 +1,253 @@
+*{list-style-type: none;}
+
+body {
+    background-color: #fff;
+    color: #777;
+    margin-top: 140px;
+    
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-weight: 300;
+    color: #444;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 30px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a.word {
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    color: #02b8dd;
+    
+ }
+
+strong {
+    font-weight: bold;
+}
+small {
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+}
+/* styling header */
+/* 
+ */
+ /* ------------------------------------------------------ */
+header {
+
+    background-color: #E9E9E9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 110px;
+
+    
+}
+
+#logo{
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#navlists{
+    display: inline-block;
+    float: right;
+    margin-top: 50px;
+    font-size: x-large;
+    margin-right: 20px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin:15px;
+}
+
+a {
+    text-decoration:none;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+body{font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #E9E9E9;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float: left;
+  border-radius: 2px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 2px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+/*product*/
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+  width: 80%;
+  height:80% ;
+  float:right;
+}
+
+.img-zoom-lens {
+    
+
+  position: absolute;
+  border: 1px solid:white;
+  /*set the size of the lens:*/
+  width : 100px;
+  height : 100px;
+  
+  
+
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width:200px ;
+  height: 200px;
+  
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+   float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  button{
+      width:80px;
+      height: 30px;
+      color: white;
+     background-color: green;
+  }
+  p{
+      color: #000;
+      font-size: large;
+  }
